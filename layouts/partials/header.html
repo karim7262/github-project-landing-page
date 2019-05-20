@@ -9,6 +9,7 @@
 				<div class="intro-message col-md-6">
 					<h1>{{ .Site.Title }}</h1>
 					<h3>{{ .Site.Params.description }}</h3>
+					<blockquote>{{ .Site.Params.long_description }}</blockquote>
 
 					{{ if (isset .Site.Params "github_project_name") }}
 					{{ $user := .Site.Params.github_user_name }}
